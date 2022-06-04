@@ -4,7 +4,7 @@
     import maintitle from '@svelte-docs/get/maintitle';
     
     let descr = 'Wiki for Blackcoin - "The Original" - The First Pure Proof of Stake Bitcoin Fork - Since 2014';
-    let img = 'https://wiki.blackcoin.nl/static/banner.jpg';
+    let img = '/static/banner.jpg';
     $: title = $current_page.title ? $current_page.title + ' — ' + maintitle : maintitle;
     $: url = `https://wiki.blackcoin.nl/${$current_page.url}`;
 </script>
