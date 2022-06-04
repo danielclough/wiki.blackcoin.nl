@@ -3,8 +3,8 @@
     import {current_page} from '@svelte-docs/get/routes';
     import maintitle from '@svelte-docs/get/maintitle';
     
-    let descr = 'Wiki for Blackcoin - Proof of Stake Since 2014';
-    let img = '/banner.jpg';
+    let descr = 'Wiki for Blackcoin - "The Original" - The First Pure Proof of Stake Bitcoin Fork - Since 2014';
+    let img = 'https://wiki.blackcoin.nl/static/banner.jpg';
     $: title = $current_page.title ? $current_page.title + ' — ' + maintitle : maintitle;
     $: url = `https://wiki.blackcoin.nl/${$current_page.url}`;
 </script>
